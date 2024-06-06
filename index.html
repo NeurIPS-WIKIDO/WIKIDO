@@ -44,7 +44,7 @@
 <!--                    <img src="images/spider_logo.png" alt="test image" height="100" />-->
                 </h1>
             </div>
-            <h2 id="appSubtitle">A Large-Scale Speech-Text Benchmark for Spoken Task-Oriented Dialogue Agents</h2>
+            <h2 id="appSubtitle">A New Benchmark Evaluating Cross-Modal Retrieval for Vision-Language Models </h2>
         </div>
     </div>
 </div>
@@ -55,20 +55,19 @@
                 <div class="infoCard">
                     <div class="infoBody">
                         <div class="infoHeadline">
-                            <h2>What is SpokenWOZ?</h2>
+                            <h2>What is WikiDO?</h2>
                         </div>
                         <p align="left">
                         </p><div class="left">
-                        SpokenWOZ is a large-scale multi-domain speech-text dataset for spoken task-oriented dialogue modeling, which consists of 203k turns, 5.7k dialogues and 249 hours audios from realistic human-to-human spoken conversations.
+                        To address this gap, we introduce WikiDO (drawn from <b>Wiki</b>pedia <b>D</b>diversity <b>O</b>bservatory), a new cross-modal retrieval benchmark to assess the OOD generalization capabilities of pretrained VLMs. This consists of 380K image-text pairs from Wikipedia with domain labels, along with carefully curated, human-verified in-distribution (ID) and OOD test sets of size 3K each. The image-text pairs are very diverse in topics.
                         </div>
                         <p></p>
                         <div class="infoHeadline">
-                            <h2>Why SpokenWOZ?</h2>
+                            <h2>Why WikiDO?</h2>
                         </div>
                         <p align="left">
                         </p><div class="left">
-                        The majority of existing TOD datasets are constructed via writing or paraphrasing from annotators rather than being collected from realistic spoken conversations. The written TDO datasets may not be representative of the way people naturally speak in real-world conversations, and make it difficult to train and evaluate models that are specifically designed for spoken TOD. Additionally, the robustness issue, such as ASR noise, also can not be fully explored using these written TOD datasets. Different exsiting spoken TOD datasets, we introduce common spoken characteristics in SpokenWOZ, such like word-by-word processing and commonsense 
-                            in spoken language. SpokenWOZ also includes cross-turn detection and reasoning slot detection as new challenges to better handle these spoken characteristics.
+                        Cross-modal (image-to-text and text-to-image) retrieval is an established task used in evaluation benchmarks to test the performance of vision-language models (VLMs). Several state-of-the-art VLMs (e.g. CLIP, BLIP-2) have achieved near-perfect performance on widely-used image-text retrieval benchmarks such as MSCOCO-Test-5K and Flickr30K-Test-1K. As a measure of out-of-distribution (OOD) generalization, prior works rely on zero-shot performance evaluated on one dataset (Flickr) using a VLM finetuned on another one (MSCOCO). We argue that such comparisons are insufficient to assess the OOD generalization capability of models due to high visual and linguistic similarity between the evaluation and finetuning datasets. WikiDO offers a strong cross-modal retrieval benchmark for current VLMs, especially for evaluating OOD generalization.
                         <a class="btn actionBtn" href="https://arxiv.org/abs/2305.13040">SpoeknWOZ Paper </a>
                         </div>
                         <p></p>
